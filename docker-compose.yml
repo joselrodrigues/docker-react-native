@@ -1,0 +1,20 @@
+version: '3.7'
+services: 
+    reactnative:
+        build: 
+            context: ./
+            dockerfile: docker/Dockerfile
+        container_name: reactNative
+        environment:
+            - REACT_NATIVE_PACKAGER_HOSTNAME=0.0.0.0
+            - EXPO_DEVTOOLS_LISTEN_ADDRESS=0.0.0.0
+        ports:
+            - "19000:19000"
+            - "19001:19001"
+            - "19002:19002"
+            - "19006:19006"
+        volumes: 
+            - .:/usr/src/app
+            - node_modules:/usr/src/app/ReactNative/node_modules
+volumes: 
+    node_modules:
