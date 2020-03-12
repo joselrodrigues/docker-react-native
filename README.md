@@ -7,7 +7,7 @@ A React Native development environment using Docker.
 Download and install [docker](https://docs.docker.com/docker-for-windows/install/) and [docker-compose](https://docs.docker.com/compose/install/).
 
 ```
-git clone https://github.com/jasonjlock/react-native-env.git
+git clone https://github.com/joselrodrigues/docker-react-native.git
 ```
 
 
